@@ -55,6 +55,7 @@ TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 157, 157)
 TextBox.TextSize = 25.000
 TextBox.TextWrapped = true
+TextBox.ClearTextOnFocus = false
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
 UICorner_2.CornerRadius = UDim.new(0, 5)
