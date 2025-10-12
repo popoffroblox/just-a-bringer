@@ -1,3 +1,4 @@
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -142,5 +143,10 @@ end)
 
 
 -- code structure is messy, sorry :D
-game.TextChatService.TextChannels.RBXGeneral:SendAsync('loaded bringer!')
+
+if game.Players.LocalPlayer.Name == 'asiankiddo2900' then
+    game.TextChatService.TextChannels.RBXGeneral:SendAsync('im a cutie patootie')
+else
+    game.TextChatService.TextChannels.RBXGeneral:SendAsync('loaded bringer!')
+end
 loadstring(game:HttpGet('https://github.com/popoffroblox/just-a-bringer/raw/refs/heads/main/fixer.lua', true))()
