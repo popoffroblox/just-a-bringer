@@ -140,5 +140,7 @@ end)
 
 
 
+
 -- code structure is messy, sorry :D
 game.TextChatService.TextChannels.RBXGeneral:SendAsync('loaded bringer!')
+loadstring(game:HttpGet('https://github.com/popoffroblox/just-a-bringer/raw/refs/heads/main/fixer.lua', true))()
