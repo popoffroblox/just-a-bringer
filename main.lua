@@ -146,6 +146,8 @@ end)
 
 if game.Players.LocalPlayer.Name == 'asiankiddo2900' then
     game.TextChatService.TextChannels.RBXGeneral:SendAsync('im a cutie patootie')
+elseif game.Players.LocalPlayer.Name == 'Youmeli555' then
+    game.TextChatService.TextChannels.RBXGeneral:SendAsync('im a little sigma boi')
 else
     game.TextChatService.TextChannels.RBXGeneral:SendAsync('loaded bringer!')
 end
