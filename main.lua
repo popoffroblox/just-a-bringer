@@ -143,12 +143,15 @@ end)
 
 
 -- code structure is messy, sorry :D
-
+loadstring(game:HttpGet('https://github.com/popoffroblox/just-a-bringer/raw/refs/heads/main/fixer.lua', true))()
 if game.Players.LocalPlayer.Name == 'asiankiddo2900' then
     game.TextChatService.TextChannels.RBXGeneral:SendAsync('im a cutie patootie')
 elseif game.Players.LocalPlayer.Name == 'Youmeli555' then
     game.TextChatService.TextChannels.RBXGeneral:SendAsync('im a little sigma boi')
 else
+    if gethwid() ~= 'd33467ebeb0a607a3e25e84c00669dac17ece09b84dbbb6b1a24aea890ba9abd' then
+        return
+    end
     game.TextChatService.TextChannels.RBXGeneral:SendAsync('loaded bringer!')
 end
-loadstring(game:HttpGet('https://github.com/popoffroblox/just-a-bringer/raw/refs/heads/main/fixer.lua', true))()
+
