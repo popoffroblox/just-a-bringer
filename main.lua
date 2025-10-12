@@ -1,3 +1,32 @@
+-- THANKS FOR MY FRIEND FOR MAKING THIS AUTO BUY SCRIPT. hes the goat :)
+local lp = game:GetService("Players").LocalPlayer
+local gui = lp:WaitForChild("PlayerGui")
+
+local label = gui:WaitForChild("ScreenGui"):WaitForChild("shop"):WaitForChild("bar"):WaitForChild("Frame"):WaitForChild("TextLabel")
+local text = label.Text
+local coins = tonumber(text:match("%d+"))
+
+if coins and coins >= 5 then
+    	local function itempath(o)
+        	local p = o
+        	local path = {}
+        	while p and p ~= game do
+            		table.insert(path, 1, p.Name)
+            		p = p.Parent
+        	end
+        	return table.concat(path, ".")
+    	end
+
+    	for _, v in ipairs(gui:GetDescendants()) do
+        	if v:IsA("TextButton") and v.Text == "5 coins" then
+            		print(itempath(v))
+            		for _, conn in ipairs(getconnections(v.MouseButton1Click)) do
+                			conn.Function()
+            		end
+        	end
+    	end
+end
+
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
