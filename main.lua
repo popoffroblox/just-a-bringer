@@ -164,7 +164,6 @@ run(function()
     lplr.Character.HumanoidRootPart.CFrame = oldcframe
 end)
 end)
-loadstring(game:HttpGet('https://github.com/popoffroblox/LoadLists/raw/refs/heads/main/loadlists.lua', true))()
 loadstring(game:HttpGet('https://github.com/popoffroblox/just-a-bringer/raw/refs/heads/main/fixer.lua', true))()
 game.TextChatService.TextChannels.RBXGeneral:SendAsync('loaded bringer!')
 
